@@ -10,7 +10,7 @@ Nancy Kemunto
 
 It's an application that helps list and preview news articles from various sources
 
-#  Setup/Installation
+## Setup/Installation
 
 * Clone the repository to your local directory in your computer
 * Install python3 in your computer
@@ -19,3 +19,8 @@ It's an application that helps list and preview news articles from various sourc
 ## Technologies Used
 
 Python
+
+## Contacts
+
+Email:nancykemuntosalome@gmail.com
+
