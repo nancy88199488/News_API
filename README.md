@@ -1,26 +1,30 @@
-##  News API
+##   News API
 
 This project was generated with Python 3.8.
 
-## Author:
+##  Author:
 
 Nancy Kemunto
 
-## Description:
+##  Description:
 
 It's an application that helps list and preview news articles from various sources
 
-## Setup/Installation
+##  Setup/Installation
 
 * Clone the repository to your local directory in your computer
 * Install python3 in your computer
 * Run python3 in the terminal and get started
 
-## Technologies Used
+##  Technologies Used
 
 Python
 
-## Contacts
+##  Contacts
 
 Email:nancykemuntosalome@gmail.com
+
+##  License
+
+This project is under the MIT license Copyright (c) 2021. Nancy Kemunto
 
