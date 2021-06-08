@@ -11,7 +11,7 @@ class Article:
         self.image = image
         self.title = title
 
-class source:
+class Source:
     '''
        News source class to define the newsSource object 
        '''
