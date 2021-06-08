@@ -13,7 +13,7 @@ def index():
 	business = get_news_source('business')
 	sports = get_news_source('sports')
 	entertainment = get_news_source('entertainment')
-	title = "News Room"
+	title = "Daily News"
 
 	return render_template('index.html',title = title, technology = technology,business = business,sports = sports,entertainment = entertainment)
 
@@ -23,6 +23,6 @@ def articles(id):
 	view articles  page function that returns the articles page and its data
 	'''
 	articles = get_articles(id)
-	title = f'News Room articles | {id}'
+	title = f'Daily News articles | {id}'
 
 	return render_template('news_articles.html',title= title,articles = articles)
