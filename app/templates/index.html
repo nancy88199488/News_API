@@ -5,6 +5,9 @@
 {% block styles%}
 {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='CSS.css')}}/index.css')}}" />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+    </style>
 
 {% endblock %}
 
@@ -12,8 +15,8 @@
 {% block content%}
 <div class="container">
 <div class="card-header banner">
-    <h1>Welcome to our Daily News Updates</h1>
-    <P class="intro">Search the articles to enjoy the most popular news or any to yor likings</P>
+    <h1 style="text-align:center;">Welcome to our Daily News Updates</h1>
+    <P class="int">A place to browse what you enjoy the most,  here we have it all</P>
 </div>
     <div class="row">
         <div class="col-md-6">
