@@ -1,5 +1,5 @@
 import urllib.request,json
-from .models import Article, Source
+from .models import NewsArticle, NewsSource
 
 #getting the apiKey
 Api_key = None
@@ -50,7 +50,7 @@ def process_results(source_list):
         description = source_item.get('description')
         url = source_item.get('url')
         if id:
-            source_object = Source(id,name,description,url)
+            source_object = NewsSource(id,name,description,url)
             source_results.append(source_object)
 
     return source_results
@@ -86,7 +86,7 @@ def process_articles_results(news):
         title = article.get ('title')
 
         if url:
-            article_objects = Article(author,description,time,image,url,title)
+            article_objects = NewsArticle(author,description,time,image,url,title)
             article_source_results.append(article_objects)
 
     return article_source_results

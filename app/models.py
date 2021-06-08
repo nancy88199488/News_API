@@ -1,4 +1,4 @@
-class Article:
+class NewsArticle:
     '''
     News article class to define the newsArticle object 
     '''
@@ -11,7 +11,7 @@ class Article:
         self.image = image
         self.title = title
 
-class Source:
+class NewsSource:
     '''
        News source class to define the newsSource object 
        '''
