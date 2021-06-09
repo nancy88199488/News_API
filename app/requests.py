@@ -18,6 +18,7 @@ def configure_request(app):
         articles_url = app.config['ARTICLE_BASE_URL']
 
 def get_news_source(category):
+
 	'''
 	Function that gets the json response to our url request
 	'''
@@ -36,6 +37,7 @@ def get_news_source(category):
 	return news_source_results
 
 def process_news_source(news_source_list):
+
 	'''
 	Function that processes the news sources results and turns them into a list of objects
 	Args:
@@ -57,6 +59,7 @@ def process_news_source(news_source_list):
 	return news_source_results
 
 def get_articles(id):
+
 	'''
 	Function that processes the articles and returns a list of articles objects
 	'''
@@ -74,14 +77,18 @@ def get_articles(id):
 
    
 def get_news_source(category):
+
 	'''
 	Function that gets the json response to our url request
 	'''
+
 	get_news_source_url = base_url.format(category,api_key)
+
 
 	with urllib.request.urlopen(get_news_source_url) as url:
 		get_news_source_data = url.read()
 		get_news_source_response = json.loads(get_news_source_data)
+
 
 		news_source_results = None
 
@@ -90,3 +97,4 @@ def get_news_source(category):
 			news_source_results = process_news_source(news_source_results_list)
 
 	return news_source_results
+

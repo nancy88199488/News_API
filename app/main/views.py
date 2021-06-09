@@ -9,6 +9,7 @@ def index():
 	'''
 	view root page function that returns the index page and its data
 	'''
+	
 	technology = get_news_source('technology')
 	business = get_news_source('business')
 	entertainment = get_news_source('entertainment')
